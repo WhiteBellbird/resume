@@ -2,12 +2,13 @@ const toggleBtn = document.getElementById('theme-toggle');
 
 function updateButton() {
   if (document.body.classList.contains('dark')) {
-    toggleBtn.textContent = '☀️ Light Mode';
+    toggleBtn.textContent = '☀️';
+    toggleBtn.title = 'Light Mode';
   } else {
-    toggleBtn.textContent = '🌙 Dark Mode';
+    toggleBtn.textContent = '🌙';
+    toggleBtn.title = 'Dark Mode';
   }
 }
-
 // 처음에 둘 다 지운다
 document.body.classList.remove('dark', 'light');
 
