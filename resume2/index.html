@@ -2,88 +2,104 @@
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FUNNYCOM</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
   <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 
 <body>
   <div id="container">
     <header>
-      <h1>funnycom</h1>
+      <h1>Portfolio</h1>
       <h2>Java FullStack Developer</h2>
       <button id="theme-toggle">🌙 Dark Mode</button>
     </header>
-    <!-- 내용 -->
+
     <main>
-      <!-- 화면을 좌우로 나눔 -->
+      <!-- 왼쪽 -->
       <article id="left">
         <div id="pf-img">
-          <img src="free-user-image.png" alt="프로필 이미지">
+          <img src="free-user-image.png" alt="프로필 이미지" />
         </div>
 
-        <!-- 자기 소개 -->
         <section>
-          <!-- 소개 내용은 <p>와 </p> 사이의 부분을 수정하세요 -->
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus debitis ipsam tempore quia
-            ad. Ducimus sint vel porro eos debitis veniam quis, repellat odio neque, cum voluptate, natus doloremque!
-          </p>
-
-          <!-- sns 링크 부분 -->
-          <!-- href="" 부분의 링크와 내용을 수정하세요 -->
           <ul id="sns">
             <li>
-              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <i class="fa fa-envelope"></i>
               <a href="mailto:your-email@example.com">myemail@gmail.com</a>
             </li>
             <li>
-              <i class="fab fa-github" aria-hidden="true"></i>
+              <i class="fab fa-github"></i>
               <a href="https://github.com/gh-username">gh-username</a>
             </li>
             <li>
-              <i class="fab fa-linkedin" aria-hidden="true"></i>
+              <i class="fab fa-linkedin"></i>
               <a href="https://linkedin.com/linkedin-username">linkedin-username</a>
             </li>
           </ul>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus debitis ipsam tempore quia
+            ad. Ducimus sint vel porro eos debitis veniam quis, repellat odio neque, cum voluptate, natus doloremque!
+          </p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci consectetur saepe ducimus magni nulla sapiente in, laudantium, repudiandae hic quas incidunt quae dicta esse odio iusto maiores nesciunt ad corrupti.</p>
+        </section>
+
+        <section>
+          <h2>포트폴리오 (개인 프로젝트)</h2>
+          <dl id="portfolio-list">
+            <dt>프로젝트 A (2023.01 - 2023.06)</dt>
+            <dd>설명: 거래소 주문 매칭 엔진 개발</dd>
+            <dd>기술 스택: Java, Spring Boot, Kafka, Redis</dd>
+
+            <dt>프로젝트 B (2022.07 - 2022.12)</dt>
+            <dd>설명: 클라우드 기반 모니터링 시스템 구축</dd>
+            <dd>기술 스택: AWS, Kubernetes, Prometheus</dd>
+          </dl>
         </section>
       </article>
 
+      <!-- 오른쪽 -->
       <article id="right">
         <section>
-          <h2>경력(work)</h2>
-          <!-- 경력 내용 수정 -->
+          <h2>대외활동</h2>
           <dl>
-            <dt>회사 A : 2018 ~ 2020</dt>
+            <dt>회사 A : 2022 ~ 2022</dt>
             <dd>회사에서 맡았던 업무</dd>
             <dd>기타 사항</dd>
           </dl>
-          <dl>
-            <dt>회사 B : 2020 ~ 2022</dt>
-            <dd>회사에서 맡았던 업무</dd>
-          </dl>
         </section>
+
         <section>
-          <h2>다룰 수 있는 기술(skills)</h2>
-          <!-- 자신있는 기술 수정 -->
-          <p>HTML/CSS</p>
-          <p>Javascript</p>
-          <p>React</p>
-          <p>Github</p>
+          <h2>다룰 수 있는 기술 (Skills)</h2>
+          <p>C++</p>
+          <p>Java</p>
+          <p>Spring framework</p>
+          <p>Docker</p>
+          <p>Jenkins</p>
+          <p>Ansible</p>
+          <p>Kubernetes</p>
+          <p>AWS</p>
         </section>
+
         <section>
-          <h2>학력(education)</h2>
-          <!-- 학력 수정 -->
-          <p>2018.02 - XX 대학교 졸업(전공: 컴퓨터공학)</p>
-          <p>2012.02 - XX 고등학교 졸업</p>
-          <p> ... </p>
+          <h2>학력 (Education)</h2>
+          <p>2022.03 - XX 대학교 졸업 (전공: 전자공학)</p>
+          <p>2015.02 - XX 고등학교 졸업</p>
+        </section>
+
+        <section>
+          <h2>자격증</h2>
+          <p>2024.10 - 산업기사</p>
+          <p>2023.03 - AWS</p>
         </section>
       </article>
     </main>
   </div>
+
+  <script src="./script.js"></script>
 </body>
-<script src="./script.js"></script>
 
 </html>

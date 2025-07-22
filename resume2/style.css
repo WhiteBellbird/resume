@@ -1,3 +1,6 @@
+/* =========================
+   기본 초기화 및 공통
+   ========================= */
 * {
   margin: 0;
   padding: 0;
@@ -5,14 +8,10 @@
 }
 
 body {
-  transition: background-color 0.5s ease, color 0.5s ease;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f9f9f9;
   color: #333;
-}
-
-#left, #right {
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
@@ -37,6 +36,9 @@ header h2 {
   color: #888;
 }
 
+/* =========================
+   레이아웃
+   ========================= */
 main {
   display: flex;
   gap: 20px;
@@ -44,12 +46,16 @@ main {
 }
 
 #left, #right {
+  flex: 1;
   background: #fff;
   padding: 20px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  flex: 1;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+/* =========================
+   프로필 이미지
+   ========================= */
 #pf-img {
   text-align: center;
   margin-bottom: 20px;
@@ -63,6 +69,9 @@ main {
   border: 3px solid #ccc;
 }
 
+/* =========================
+   섹션 및 제목
+   ========================= */
 section {
   margin-bottom: 20px;
 }
@@ -79,17 +88,19 @@ section p {
   margin-bottom: 10px;
 }
 
+/* =========================
+   SNS 링크
+   ========================= */
 #sns {
   list-style: none;
-  padding: 0;
   margin-top: 10px;
 }
 
 #sns li {
-  margin-bottom: 10px;
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 #sns a {
@@ -101,6 +112,9 @@ section p {
   text-decoration: underline;
 }
 
+/* =========================
+   정의 목록
+   ========================= */
 dl {
   margin-bottom: 10px;
 }
@@ -115,20 +129,37 @@ dd {
   color: #505050;
 }
 
-/* 다크모드 기본 감지 */
+/* =========================
+   포트폴리오
+   ========================= */
+#portfolio-list {
+  margin-bottom: 10px;
+}
+
+#portfolio-list dt {
+  font-weight: bold;
+  color: #4a4a4a;
+  margin-top: 15px;
+}
+
+#portfolio-list dd {
+  margin-left: 20px;
+  color: #555;
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
+/* =========================
+   다크 모드 (미디어 쿼리)
+   ========================= */
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #121212;
     color: #e0e0e0;
   }
 
-  header h1 {
-    color: #f5f5f5;
-  }
-
-  header h2 {
-    color: #bbb;
-  }
+  header h1 { color: #f5f5f5; }
+  header h2 { color: #bbb; }
 
   #left, #right {
     background: #1e1e1e;
@@ -141,31 +172,26 @@ dd {
     border-color: #575757;
   }
 
-  #sns a {
-    color: #90caf9;
-  }
+  #sns a { color: #90caf9; }
+  #pf-img img { border-color: #444; }
 
-  #pf-img img {
-    border-color: #444;
-  }
+  #portfolio-list dt { color: #ddd; }
+  #portfolio-list dd { color: #bbb; }
 }
 
-/* 다크모드 클래스 수동 토글 */
+/* =========================
+   다크 모드 (수동 토글)
+   ========================= */
 body.dark {
   background-color: #121212;
   color: #e0e0e0;
 }
 
-body.dark header h1 {
-  color: #f5f5f5;
-}
-
-body.dark header h2 {
-  color: #bbb;
-}
+body.dark header h1 { color: #f5f5f5; }
+body.dark header h2 { color: #bbb; }
 
 body.dark #left, body.dark #right {
-  background: #1e1e1e;
+  background: #242424;
   color: #ddd;
   box-shadow: 0 0 5px rgba(255,255,255,0.1);
 }
@@ -175,45 +201,39 @@ body.dark section h2 {
   border-color: #333;
 }
 
-body.dark #sns a {
-  color: #90caf9;
-}
+body.dark #sns a { color: #90caf9; }
+body.dark #pf-img img { border-color: #444; }
 
-body.dark #pf-img img {
-  border-color: #444;
-}
+body.dark #portfolio-list dt { color: #ddd; }
+body.dark #portfolio-list dd { color: #bbb; }
 
+/* =========================
+   라이트 모드
+   ========================= */
 body.light {
   background-color: #fff;
   color: #333;
 }
 
-body.light header h1 {
-  color: #4a4a4a;
-}
-
-body.light header h2 {
-  color: #888;
-}
+body.light header h1 { color: #4a4a4a; }
+body.light header h2 { color: #888; }
 
 body.light #left, body.light #right {
-  background: #f5f5f5;
+  background: #e3e3e3;
   color: #333;
 }
 
 body.light section h2 {
-  color: #4a4a4a;
+  color: #292929;
   border-bottom: 2px solid #ccc;
 }
 
-body.light #sns a {
-  color: #4a90e2;
-}
+body.light #sns a { color: #4a90e2; }
+body.light #pf-img img { border-color: #ccc; }
 
-body.light #pf-img img {
-  border-color: #ccc;
-}
-
+/* =========================
+   테마 토글 버튼
+   ========================= */
 #theme-toggle {
   position: fixed;
   top: 20px;

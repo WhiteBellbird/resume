@@ -1,4 +1,4 @@
-const toggleBtn = document.getElementById('theme-toggle');
+  const toggleBtn = document.getElementById('theme-toggle');
 
 function updateButton() {
   if (document.body.classList.contains('dark')) {
