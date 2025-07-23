@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - SEK L</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+</head>
+
+<body>
+
+    <!-- 네비게이션 바 -->
+    <nav>
+        <a href="#" class="logo" aria-label="홈으로 이동">SEK L</a>
+
+        <ul class="menu" role="menubar">
+            <li role="none"><a href="#main" role="menuitem" tabindex="0">홈</a></li>
+            <li role="none"><a href="#about" role="menuitem" tabindex="0">소개</a></li>
+            <li role="none"><a href="#skills" role="menuitem" tabindex="0">기술</a></li>
+            <li role="none"><a href="#projects" role="menuitem" tabindex="0">프로젝트</a></li>
+            <li role="none"><a href="#contact" role="menuitem" tabindex="0">연락처</a></li>
+        </ul>
+
+        <button class="btn-follow" aria-label="팔로우 버튼">팔로우</button>
+
+        <button class="hamburger" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- 메인 화면 -->
+    <header id="main" role="banner" tabindex="-1">
+        <div class="container">
+            <div class="pf-img">
+                <img src="images/free-user-image.png" alt="프로필 사진" />
+
+            </div>
+
+            <h1>SAKI</h1>
+            <h2>Cryptocurrency Developer & Backend Engineer</h2>
+
+            <p class="intro">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias amet quo totam facere rem necessitatibus
+                fugiat numquam ab, voluptatum inventore,
+                iure rerum fugit magnam minima? Reiciendis omnis odit dolore voluptatibus?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sint iste
+                , excepturi nesciunt rerum aspernatur necessitatibus deleniti commodi, dicta soluta id quia ullam magni
+                asperiores. Aliquid distinctio culpa quia fuga.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+                <a href="files/SEK_L_Resume.pdf" class="btn btn-primary" download class="btn btn-secondary">이력서 다운로드</a>
+            </div>
+
+            <div class="social-links" aria-label="소셜 미디어 링크">
+                <a href="https://github.com/sek-l" target="_blank" rel="noopener" aria-label="GitHub">
+                    <img src="images/github-icon.svg" alt="GitHub 아이콘" />
+                </a>
+                <a href="https://linkedin.com/in/sek-l" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <img src="images/linkedin-icon.svg" alt="LinkedIn 아이콘" />
+                </a>
+                <!-- 필요 시 다른 SNS 추가 -->
+            </div>
+        </div>
+        <!-- 소개 섹션 -->
+        <section id="about" class="section-about animate-on-scroll">
+
+            <div class="section-container">
+                <h2>소개</h2>
+                <p class="about-description">
+                    암호화폐 및 블록체인 분야에서 백엔드 개발자로 활동하며, 마이크로서비스 아키텍처와 도메인 주도 설계(DDD)를 전문으로 합니다.
+                    클라우드 기반 인프라와 컨테이너 오케스트레이션에도 능숙하며, 항상 새로운 기술 습득에 열정을 가지고 있습니다.
+                </p>
+
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">완성 프로젝트</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">팔로워</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">346</span>
+                        <span class="stat-label">Github 커밋</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1001</span>
+                        <span class="stat-label">총 기여</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 기술 섹션 -->
+        <section id="skills" class="section-skills animate-on-scroll">
+            <div class="section-container">
+                <h2>기술 스킬</h2>
+
+                <div class="skills-tags" aria-label="보유 기술 태그 목록">
+                    <button type="button" class="skill-tag" aria-pressed="false">Java</button>
+                    <button type="button" class="skill-tag" aria-pressed="false">Spring Boot</button>
+                    <button type="button" class="skill-tag" aria-pressed="false">Docker</button>
+                    <button type="button" class="skill-tag" aria-pressed="false">Kubernetes</button>
+                    <button type="button" class="skill-tag" aria-pressed="false">AWS</button>
+                    <button type="button" class="skill-tag" aria-pressed="false">Kafka</button>
+                    <button type="button" class="skill-tag" aria-pressed="false">Redis</button>
+                    <button type="button" class="skill-tag" aria-pressed="false">Microservices</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 프로젝트 섹션 -->
+        <section id="projects" class="section-projects animate-on-scroll">
+
+            <div class="section-container">
+                <h2>프로젝트</h2>
+
+                <div class="projects-grid">
+                    <!-- 프로젝트 카드 1 -->
+                    <div class="project-card">
+                        <img src="images/project1.png" alt="프로젝트 1 이미지" class="project-image" />
+                        <h3>암호화폐 거래 플랫폼 개발</h3>
+                        <p>실시간 거래와 주문 매칭 기능을 제공하는 고성능 암호화폐 거래소 백엔드 개발 프로젝트.</p>
+                        <p class="tech-stack">AWS, Jenkins, Ansible, Kafka, Redis, Kubernetes, Docker</p>
+                        <div class="project-links">
+                            <a href="https://github.com/sek-l/project1" target="_blank" rel="noopener"
+                                class="btn btn-primary">GitHub</a>
+                            <a href="https://live-demo1.example.com" target="_blank" rel="noopener"
+                                class="btn btn-secondary">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 카드 2 -->
+                    <div class="project-card">
+                        <img src="images/project2.png" alt="프로젝트 2 이미지" class="project-image" />
+                        <h3>클라우드 PaaS 서비스 클론 프로젝트</h3>
+                        <p>도커 컨테이너를 활용하여 사용자의 웹 프로젝트를 배포를 도와주는 백엔드 개발 프로젝트.</p>
+                        <p class="tech-stack">Docker, AWS, Ansible, Spring Cloud</p>
+                        <div class="project-links">
+                            <a href="https://github.com/sek-l/project2" target="_blank" rel="noopener"
+                                class="btn btn-primary">GitHub</a>
+                            <a href="https://live-demo2.example.com" target="_blank" rel="noopener"
+                                class="btn btn-secondary">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 카드 3 -->
+                    <div class="project-card">
+                        <img src="images/project3.png" alt="프로젝트 3 이미지" class="project-image" />
+                        <h3>2D 쭈꾸르 게임 프로젝트</h3>
+                        <p>Unity를 활용하여 간단한 2D 쭈꾸르 게임 프로젝트</p>
+                        <p class="tech-stack">C#, Unity3D, 2D Game Development, Game Programming</p>
+                        <div class="project-links">
+                            <a href="https://github.com/sek-l/project3" target="_blank" rel="noopener"
+                                class="btn btn-primary">GitHub</a>
+                            <a href="https://live-demo3.example.com" target="_blank" rel="noopener"
+                                class="btn btn-secondary">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 연락처 섹션 -->
+        <section id="contact" class="section-contact animate-on-scroll">
+            <div class="section-container">
+                <h2>연락처</h2>
+
+                <div class="contact-info">
+                    <p><strong>이메일:</strong> <a href="mailto:sek.l@example.com">sek.l@example.com</a></p>
+                    <p><strong>전화:</strong> <a href="tel:+821012345678">+82 10-1234-5678</a></p>
+                    <p><strong>위치:</strong> 서울, 대한민국</p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/sek-l" target="_blank"
+                            rel="noopener">https://github.com/sek-l</a></p>
+                </div>
+
+                <form class="contact-form" aria-label="연락처 메시지 전송 폼" novalidate>
+                    <div class="form-group">
+                        <label for="name">이름</label>
+                        <input type="text" id="name" name="name" required placeholder="이름을 입력하세요" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">이메일</label>
+                        <input type="email" id="email" name="email" required placeholder="이메일을 입력하세요" />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">메시지</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="메시지를 입력하세요"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">전송</button>
+                </form>
+            </div>
+        </section>
+    </header>
+
+    <!-- 이후 섹션 (소개, 기술, 프로젝트, 연락처, 푸터) 여기서 이어서 작업 예정 -->
+
+    <script src="js/script.js"></script>
+    <script src="js/animation.js"></script>
+</body>
+
+</html>

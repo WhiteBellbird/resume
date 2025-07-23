@@ -1,0 +1,78 @@
+/* 연락처 섹션 */
+.section-contact {
+  background-color: var(--color-bg);
+  padding: 4rem 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section-contact h2 {
+  font-size: 2.4rem;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: var(--color-text);
+  margin: 0.3rem 0;
+}
+
+.contact-info a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.contact-form {
+  margin-top: 2.5rem;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: var(--font-main);
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #e6554f;
+}
