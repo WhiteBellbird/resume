@@ -27,14 +27,4 @@ document.addEventListener('DOMContentLoaded', () => {
     alert('팔로우 기능은 준비 중입니다.');
   });
 
-  // 기술 스킬 섹션 - 클릭 선택 기능 (추후 skills 섹션 구현 후 연결)
-  // 예시:
-  // document.querySelectorAll('.skill-tag').forEach(tag => {
-  //   tag.addEventListener('click', () => {
-  //     tag.classList.toggle('selected');
-  //     alert(`${tag.textContent} 스킬이 선택/해제되었습니다.`);
-  //   });
-  // });
-
-  // 폼 유효성 검사 및 전송 처리도 추후 추가 예정
 });
